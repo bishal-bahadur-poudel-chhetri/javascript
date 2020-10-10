@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Quicksand',sans-serif;
+}
+html{
+    font-size:62.5%;
+
+}
+.container{
+    width:100%;
+    height:100vh;
+    background-color: #12121f;
+    color:#eee;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.calender{
+    width:45rem;
+    height:52rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0,0,0,0.4);
+}
+.month{
+    width:100%;
+    height:12rem;
+    background-color: #167e56;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2rem;
+    text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
+}
+.month h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+.month i{
+    font-size: 3rem;
+}
+.weekdays{
+    display:grid;
+    grid-template-columns:repeat(7, 64px) ;
+    grid-gap:2px;
+    overflow: hidden;
+    font-size: 2rem;
+    
+}
+.weekdays div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.days{
+    display: grid;
+    grid-template-columns: repeat(7,64px);
+    grid-template-rows: repeat(6,55px);
+    font-size:2rem;
+ 
+    grid-gap:2px;
+    overflow: hidden;
+    padding-top:20px;
+   
+}
+.days div{
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prev-date,.new-date{
+    opacity: 0.5;
+}
